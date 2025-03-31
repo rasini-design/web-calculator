@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculatorcss.css">
+</head>
+<body>
+    <h1>CALCULATOR</h1><br>
+    <div id="c">
+    <input type="text" id="t" placeholder="0" >
+    <hr>
+    <div id="b"><button onclick="cl('AC')" >AC</button>
+        <div><button onclick="dele('DEL')">DEL</button></div>
+        <div><button onclick="display('/')">/</button></div>
+        <div><button onclick="display('*')">*</i></button></div>
+        <div><button onclick="display('7')">7</button></div>
+        <div><button onclick="display('8')">8</button></div>
+        <div><button onclick="display('9')">9</button></div>
+        <div><button onclick="display('-')">-</button></div>
+        <div><button onclick="display('4')">4</button></div>
+        <div><button onclick="display('5')">5</button></div>
+        <div><button onclick="display('6')">6</button></div>
+        <div><button onclick="display('+')">+</button> </div>
+        <div><button onclick="display('1')">1</button></div>
+        <div><button onclick="display('2')">2</button></div>
+        <div><button onclick="display('3')">3</button></div>
+        <div><button onclick="display('.')">.</button></div>
+        <div><button onclick="display('00')">00</button></div>
+        <div><button onclick="display('0')">0</button></div>
+        <div class="equal"><button onclick="solve('=')" >=</button></div>
+      </div>
+
+<script>
+    function display(n){
+        document.getElementById("t").value+=n
+    }
+    function solve(){
+        x=document.getElementById("t").value
+        l= eval(x)
+        document.getElementById("t").value=l
+}
+    function cl(){
+        f = document.getElementById("t")
+        f.value = " ";
+    }
+    function dele(){
+       let v = document.getElementById("t")
+        v.value = v.value.slice(0,-1);
+    }
+</script>
+
+</body>
+</html>

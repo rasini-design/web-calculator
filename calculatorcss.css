@@ -1,0 +1,61 @@
+*{
+    padding: none;
+    margin: none;
+}
+h1{
+    text-align: center;
+}
+body{
+    background-image: url(bb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  #c{
+   width: 340px;
+  height: 500px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(190, 238, 234) ;
+  opacity: 0.7;
+  border-radius: 10px;
+    
+}
+#b{
+   display: grid;
+   grid-template-columns: 80px 80px 80px 80px;
+   row-gap: 10px;
+   margin: auto;
+}
+.equal{
+  grid-column: 3 / span 2;
+  
+}
+.equal button{
+    width: 160px;
+}
+button{
+    width: 80px;
+    height: 50px;
+    background-color:rgb(190, 238, 234);
+    border:none;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+button:hover{
+    background-color: rgb(99, 156, 182);
+}
+input{
+    width: 340px;
+    height: 100px;
+    text-align: right;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(190, 233, 234) ;
+    font-size: 35px;
+    padding-right: 30px;
+}
